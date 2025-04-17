@@ -1,0 +1,10 @@
+@import 'normalize.css';
+@import 'default.css';
+
+
+/* welcome page */
+@import 'bg-pyramids.css';
+@import 'enter-as.css';
+@import 'welcome-page-logo.css';
+@import 'welcome-page-cities.css';
+

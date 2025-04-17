@@ -1,0 +1,36 @@
+:root {
+  --color0: #f9f9f8;
+  --color1: #CEB364;
+  --max-width: 1200px;
+}
+
+* {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  box-sizing: border-box;
+  color: #000;
+}
+
+body {
+  background-color: var(--color0);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  padding: 60px 30px 100px 30px;
+  min-height: 100vh;
+}
+
+.link_brown-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--color1);
+}
+
+@media (max-width: 760px) {
+  * {
+      font-size: 16px;
+  }
+}

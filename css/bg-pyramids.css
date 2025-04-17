@@ -1,0 +1,27 @@
+.bg-pyramid {
+    position: absolute;
+    width: 168px;
+    z-index: -1;
+}
+
+.bg-pyramid-1 {
+    top: 100px;
+    left: 100px;
+}
+
+.bg-pyramid-2 {
+    top: 340px;
+    right: 120px;
+}
+
+.bg-pyramid-3 {
+    bottom: 100px;
+    right: 10%;
+}
+
+
+@media (max-width: 1200px) {
+    .bg-pyramid {
+        display: none;
+    }
+}

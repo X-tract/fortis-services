@@ -1,0 +1,44 @@
+.welcome-page-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.welcome-page-logo__name {
+    font-weight: 400;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;    
+    text-align: center;
+}
+
+.welcome-page-logo img {
+    width: 286px;
+}
+
+.welcome-page-logo__slogan {
+    font-size: 24px;
+}
+
+@media (max-width: 1000px) {
+    .welcome-page-logo img {
+        width: 188px;
+    }
+    .welcome-page-logo__name {
+        font-size: 36px;        
+    }
+    .welcome-page-logo {
+        gap: 40px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 760px) {
+    .welcome-page-logo__name {
+        font-size: 24px;        
+    }
+    .welcome-page-logo__slogan {
+        font-size: 16px;
+    }
+}
