@@ -1,0 +1,258 @@
+/* заголовок і пошук */
+
+.categories {
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.categories__title-and-search {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories__title {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.search-form {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-form__input {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    color: var(--color4);
+    border: 1px solid var(--color3);
+    border-radius: 100px;
+    padding: 0 20px 0 55px;
+}
+
+.search-form__icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 1200px) {
+    .categories__title { font-size: 36px; }
+}
+
+@media (max-width: 1000px) {
+    .categories__title-and-search {
+        flex-direction: column;        
+    }
+}
+
+@media (max-width: 768px) {
+    .categories__title { font-size: 20px; }
+    .search-form__input {
+        height: 40px;
+        font-size: 13px;
+        padding-left: 35px;
+    }
+    .search-form__icon {
+        left: 10px;
+    }
+    .categories__title-and-search {
+        gap: 30px;
+    }
+}
+
+
+/* інформаційна панель */
+
+.categories__info-bar {
+    background-color: var(--color2);
+    border-radius: 25px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    justify-content: space-between;
+    padding: 0 0 0 20px;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 32px;    
+}
+
+.categories__location {
+    padding-left: 85px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.categories__location-icon {
+    height: 36px;
+}
+
+.categories__city {
+    font-weight: bold;
+    color: var(--color3);
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.categories__quantity-of-services {
+    color: var(--color3);
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.categories__avatars {
+    display: flex;
+    flex-direction: row;
+}
+.categories__avatar {
+    height: 80px;
+    margin-left: -15px;
+}
+
+
+@media (max-width: 1000px) {
+    .categories__location {
+        padding-left: 0;
+        gap: 15px;
+    }
+    .categories__info-bar {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 760px) {
+    .categories {
+        gap: 30px;
+    }
+    .categories__info-bar {
+        min-height: 40px;
+    }
+    .categories__location {
+        gap: 7px;
+    }
+    .categories__location-icon {
+        height: 15px;
+    }
+    .categories__avatar {
+        height: 40px;
+        margin-left: -5px;
+    }
+    .categories__avatar:last-child {
+        display: none;
+    }
+    .categories__avatar img {
+        height: 40px;
+    }
+}
+
+
+/* картки категорій */
+
+.categories__services {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.categories__service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 26px;
+    background-color: #fff;
+    color: var(--color3);
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 0px 0px var(--color1), 0px 4px 12px 0px #0000001A;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.categories__service:hover {
+    transform:translate(0, -3px);
+    box-shadow: inset 0px 0px 3px 3px var(--color1), 0px 4px 12px 5px #0000001A;
+    transition: all 0.3s ease;
+}
+
+.categories__service img {
+    width: 70px;
+}
+
+@media (max-width: 1200px) {
+    .categories__service {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .categories__service {
+        font-size: 20px;
+    }
+    .categories__service img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .categories__service {
+        font-size: 15px;
+    }
+    .categories__service img {
+        width: 35px;
+    }
+    .categories__services {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+/* панель управління картками категорій */
+
+.categories__controls {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.categories__next {
+    transform:rotate(180deg);
+}
+
+.categories__dots {
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.categories__dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:#ccc;
+}
+
+.categories__dot_active {
+    background-color: var(--color3);
+}
+

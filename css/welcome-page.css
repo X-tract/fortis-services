@@ -1,0 +1,187 @@
+/* увійти, як фоп/користувач */
+
+.enter-as {
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+.enter-as > span,
+.enter-as__link {
+    font-size: 15px;
+}
+
+.enter-as__link {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.enter-as__link:hover {
+    color: var(--color1);
+}
+
+.enter-as__separator {
+    font-size: 26px;
+    line-height: 26px;
+    color: var(--color1);
+}
+
+@media (max-width: 1000px) {
+    .enter-as {
+        justify-content: center;
+    }
+    .enter-as > span,
+    .enter-as__link {
+    font-size: 13px;
+}
+    .enter-as__separator {
+        font-size: 23px;
+    }
+}
+
+
+/* логотип, слоган */
+
+.welcome-page-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.welcome-page-logo__name {
+    font-weight: 400;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;    
+    text-align: center;
+}
+
+.welcome-page-logo img {
+    width: 286px;
+}
+
+.welcome-page-logo__slogan {
+    font-size: 24px;
+}
+
+.brown-underline {
+    text-decoration: underline;
+    text-decoration-color: var(--color1);
+}
+
+@media (max-width: 1000px) {
+    .welcome-page-logo img {
+        width: 188px;
+    }
+    .welcome-page-logo__name {
+        font-size: 36px;        
+    }
+    .welcome-page-logo {
+        gap: 40px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-page-logo__name {
+        font-size: 24px;        
+    }
+    .welcome-page-logo__slogan {
+        font-size: 16px;
+    }
+}
+
+
+/* фонові логотипи */
+
+.bg-pyramid {
+    position: absolute;
+    width: 168px;
+    z-index: -1;
+}
+
+.bg-pyramid-1 {
+    top: 100px;
+    left: 100px;
+}
+
+.bg-pyramid-2 {
+    top: 340px;
+    right: 120px;
+}
+
+.bg-pyramid-3 {
+    bottom: 100px;
+    right: 10%;
+}
+
+
+@media (max-width: 1200px) {
+    .bg-pyramid {
+        display: none;
+    }
+}
+
+
+/* картки міст */
+
+.welcome-page-cities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: var(--max-width);
+}
+
+.welcome-page-cities__cities {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.welcome-page-cities__city {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    gap: 26px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 0px 0px var(--color1), 0px 4px 12px 0px #0000001A;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.welcome-page-cities__city:hover {
+    transform:translate(0, -3px);
+    box-shadow: inset 0px 0px 3px 3px var(--color1), 0px 4px 12px 5px #0000001A;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 430px) {
+    .welcome-page-cities__city {
+        width: 150px;
+        height: 150px;
+        gap: 16px;
+        font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .welcome-page-cities__city {
+        width: 130px;
+        height: 130px;
+    }
+  }
