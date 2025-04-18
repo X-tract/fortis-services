@@ -88,8 +88,15 @@
     font-size: 32px;    
 }
 
+.categories__location-and-quantity-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+}
+
 .categories__location {
-    padding-left: 85px;
+    padding-left: 15px;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -124,6 +131,11 @@
     margin-left: -15px;
 }
 
+@media (max-width: 1200px) {
+    .categories__info-bar {
+        font-size: 26px;
+    }
+}
 
 @media (max-width: 1000px) {
     .categories__location {
@@ -131,7 +143,10 @@
         gap: 15px;
     }
     .categories__info-bar {
-        font-size: 26px;
+        font-size: 22px;
+    }
+    .categories__avatar:last-child {
+        display: none;
     }
 }
 
@@ -152,14 +167,24 @@
         height: 40px;
         margin-left: -5px;
     }
-    .categories__avatar:last-child {
-        display: none;
-    }
     .categories__avatar img {
         height: 40px;
     }
 }
 
+@media (max-width: 550px) {
+    .categories__info-bar {
+        padding: 10px;
+    }
+    .categories__location-and-quantity-container {
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+    }
+    .categories__quantity-of-services {
+        font-size: 14px;
+    }
+}
 
 /* картки категорій */
 
@@ -215,6 +240,7 @@
 @media (max-width: 768px) {
     .categories__service {
         font-size: 15px;
+        gap: 10px;
     }
     .categories__service img {
         width: 35px;
