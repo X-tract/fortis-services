@@ -362,6 +362,7 @@
 @media (max-width: 1000px) {
     .categories__service {
         font-size: 20px;
+        
     }
     .categories__service img {
         width: 50px;
@@ -370,6 +371,7 @@
 
 @media (max-width: 768px) {
     .categories__service {
+        padding: 20px 14px;
         font-size: 15px;
         gap: 10px;
     }
