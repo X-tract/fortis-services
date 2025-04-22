@@ -93,7 +93,7 @@
     }
     .welcome-page-logo {
         gap: 40px;
-        margin-top: 50px;
+        margin-top: 70px;
     }
 }
 
@@ -189,7 +189,7 @@
     }
   }
   
-  @media (max-width: 360px) {
+  @media (max-width: 380px) {
     .welcome-page-cities__city {
         width: 130px;
         height: 130px;
