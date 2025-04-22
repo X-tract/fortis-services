@@ -1,3 +1,6 @@
+@import 'normalize.css';
+@import 'default.css';
+
 /* увійти, як фоп/користувач */
 
 .enter-as {
@@ -177,7 +180,7 @@
     transition: all 0.3s ease;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 475px) {
     .welcome-page-cities__city {
         width: 150px;
         height: 150px;
